@@ -446,7 +446,7 @@
                 Заполните форму, опишите ваш запрос, и мы с вами свяжемся в ближайшее время.
             </p>
 
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/Pawmatespb@gmail.com" method="POST">
 
                 <div class="form-group">
                     <label for="name">Ваше имя</label>
@@ -454,6 +454,7 @@
                     <input
                         type="text"
                         id="name"
+                        name="name"
                         placeholder="Иван"
                         required
                     >
@@ -465,6 +466,7 @@
                     <input
                         type="email"
                         id="email"
+                        name="name"
                         placeholder="ivan@example.com"
                         required
                     >
@@ -475,11 +477,12 @@
 
                     <textarea
                         id="message"
+                        name="message"
                         placeholder="Ваш запрос..."
                         required
                     ></textarea>
                 </div>
-
+<input type="hidden" name="_subject" value="Новая заявка с сайта Paw Mate">
                 <button class="btn" type="submit">
                     Отправить
                 </button>
@@ -496,19 +499,7 @@
 
     <!-- JavaScript -->
     <script>
-        const form = document.getElementById("contactForm");
-
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const name = document.getElementById("name").value;
-
-            alert(
-                "Спасибо, " + name + "! Ваше сообщение отправлено."
-            );
-
-            form.reset();
-        });
+        
     </script>
 
 </body>
