@@ -446,7 +446,7 @@
                 Заполните форму, опишите ваш запрос, и мы с вами свяжемся в ближайшее время.
             </p>
 
-            <form class="contact-form" id="contactForm" action="https://formsubmit.co/Pawmatespb@gmail.com" method="POST">
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
 
                 <div class="form-group">
                     <label for="name">Ваше имя</label>
@@ -482,6 +482,7 @@
                         required
                     ></textarea>
                 </div>
+<input type="hidden" name="access_key" value="92d5190e-209b-415d-9128-ceda7a7c063e">
 <input type="hidden" name="_subject" value="Новая заявка с сайта Paw Mate">
                 <button class="btn" type="submit">
                     Отправить
